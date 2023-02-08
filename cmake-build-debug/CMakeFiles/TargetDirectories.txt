@@ -1,0 +1,4 @@
+B:/CProjects/GeometryLibrary/cmake-build-debug/CMakeFiles/GeometryLibrary.dir
+B:/CProjects/GeometryLibrary/cmake-build-debug/CMakeFiles/edit_cache.dir
+B:/CProjects/GeometryLibrary/cmake-build-debug/CMakeFiles/GeometryExec.dir
+B:/CProjects/GeometryLibrary/cmake-build-debug/CMakeFiles/rebuild_cache.dir
