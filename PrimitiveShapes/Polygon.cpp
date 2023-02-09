@@ -36,7 +36,7 @@ void Polygon::initializeLine(const std::vector<Point>& points) {
     }
     equation.leftEdge = points[0];
     equation.rightEdge = points[1];
-    mEquasions.emplace_back(equation);
+    mEquations.emplace_back(equation);
 
 
 }
@@ -60,7 +60,7 @@ void Polygon::initializePolygon(const std::vector<Point>& points){
         }
         equation.leftEdge = points[pointIndex];
         equation.rightEdge = points[(pointIndex + 1) % points.size()];
-        mEquasions.emplace_back(equation);
+        mEquations.emplace_back(equation);
     }
 }
 
@@ -69,8 +69,8 @@ Polygon::~Polygon() {
 }
 
 bool Polygon::isPointBelongToShape(const Point &point, double delta) const {
-    if (mEquasions.size() == 1){}
-    for (const auto &equation: mEquasions) {
+    if (mEquations.size() == 1){}
+    for (const auto &equation: mEquations) {
         double count;
         if (equation.isForX)
         {

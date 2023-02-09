@@ -88,3 +88,7 @@
 2	327	6976539705289704	CMakeFiles/GeometryLibrary.dir/PrimitiveShapes/Polygon.cpp.obj	8fa0c5ab0d3f19c2
 327	423	6976539706267076	libGeometryLibrary.a	1a55105b02b13dde
 423	568	6976539707693263	GeometryExec.exe	d3f132772f316551
+2	291	6976540547459467	CMakeFiles/GeometryLibrary.dir/Math/Math.cpp.obj	37fe515ab6f7be84
+9	355	6976540548096318	CMakeFiles/GeometryLibrary.dir/Canvas/Canvas.cpp.obj	3ebf20d21799102c
+355	454	6976540549099082	libGeometryLibrary.a	1a55105b02b13dde
+454	601	6976540550545221	GeometryExec.exe	d3f132772f316551

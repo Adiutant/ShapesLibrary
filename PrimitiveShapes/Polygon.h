@@ -18,7 +18,7 @@ public:
 private:
     void initializeLine(const std::vector<Point>& points);
     void initializePolygon(const std::vector<Point>& points);
-    std::vector<Math::Equation> mEquasions;
+    std::vector<Math::Equation> mEquations;
 };
 
 

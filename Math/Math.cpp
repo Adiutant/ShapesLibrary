@@ -23,8 +23,6 @@ namespace Math {
 
     }
     bool isBetweenPoints(const Point& current, const  Point& first, const  Point& second) {
-       // auto dxc = current.x() - first.x();
-        //auto dyc = current.y() - first.y();
 
         auto dxl = second.x() - first.x();
         auto dyl = second.y() - first.y();
