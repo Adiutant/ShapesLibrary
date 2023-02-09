@@ -11,7 +11,7 @@
 
 class Polygon : public Shape {
 public:
-    Polygon(const std::vector<Point> &newPoints);
+    explicit Polygon(const std::vector<Point> &newPoints);
     ~Polygon() override;
     bool isPointBelongToShape(const Point& point,double delta) const override;
 

@@ -20,7 +20,7 @@ public:
 
     Matrix(int num_rows,int num_col);
 
-    inline  std::vector<double>& operator[](int index){
+    inline  std::vector<double>& operator[](size_t index){
         return _vector[index];
     }
     Matrix GetMinorMatrix();

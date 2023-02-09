@@ -7,9 +7,9 @@ using namespace std;
 
 Matrix::Matrix(int num_rows, int num_col)  {
     if (num_rows < 0 || num_col < 0) { throw out_of_range(""); }
-    for (int i = 0; i < num_rows; i++) {
+    for (size_t i = 0ull; i < num_rows; i++) {
         vector<double> proxyVector = {};
-        for (int j = 0; j < num_col; j++) {
+        for (size_t j = 0ull; j < num_col; j++) {
             proxyVector.push_back(0);
         }
         _vector.push_back(proxyVector);
@@ -21,8 +21,8 @@ Matrix Matrix::getReverseMatrix(double determinant) {
     Matrix result(this);
     int rows = result.GetNumRows();
     int col = result.GetNumCol();
-    for (int i = 0; i < rows;i++) {
-        for (int j = 0; j < col; j++) {
+    for (size_t i = 0ull; i < rows;i++) {
+        for (size_t j = 0ull; j < col; j++) {
             result[i][j] /=determinant;
         }
     }
@@ -58,9 +58,9 @@ void Matrix::Reset(int num_rows, int num_col)
 {
     if (num_rows < 0 || num_col < 0) { throw out_of_range(""); }
     _vector = {};
-    for (int i = 0; i < num_rows; i++) {
+    for (size_t i = 0ull; i < num_rows; i++) {
         vector<double> proxyVector = {};
-        for (int j = 0; j < num_col; j++) {
+        for (size_t j = 0ull; j < num_col; j++) {
 
             proxyVector.push_back(0);
         }
