@@ -26,10 +26,10 @@ Circle::Circle(const Point &center, const double radius): m_center{center.x(), c
 
 }
 
-Point Circle::getCenter() const {
-    return m_center;
-}
-void Circle::setCenter(const Point &center)  {
-    m_center = center;
-}
+//Point Circle::getCenter() const {
+//    return m_center;
+//}
+//void Circle::setCenter(const Point &center)  {
+//    m_center = center;
+//}
 

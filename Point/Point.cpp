@@ -24,3 +24,8 @@ double Point::GetDistance(const Point &point) const {
     return sqrt(pow(point.x() - m_x, 2)+pow(point.y() - m_y, 2));
 }
 
+Point::Point(const Point &another) {
+    m_y = another.m_y;
+    m_x = another.m_x;
+}
+

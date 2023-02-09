@@ -16,8 +16,8 @@ public:
     ~Circle() override;
     double radius() const;
     bool isPointBelongToShape(const Point& point,double delta) const override;
-    Point getCenter() const override;
-    void setCenter(const Point &center) override;
+//    Point getCenter() const override;
+//    void setCenter(const Point &center) override;
 private:
     double m_radius;
     Point m_center;

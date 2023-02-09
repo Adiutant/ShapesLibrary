@@ -10,6 +10,7 @@
 class Point {
 public:
     Point();
+    Point(const Point& another);
     Point(double x, double y);
     double x() const;
     double y() const;

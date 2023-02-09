@@ -106,11 +106,11 @@ Canvas::~Canvas() {
 }
 
 void Canvas::draw(Shape &shape) {
-    const Point center(
-            get_x_from_column(get_column_from_x(shape.getCenter().x())),
-            get_y_from_row(get_row_from_y(shape.getCenter().y()))
-    );
-    shape.setCenter(center);
+//    const Point center(
+//            get_x_from_column(get_column_from_x(shape.getCenter().x())),
+//            get_y_from_row(get_row_from_y(shape.getCenter().y()))
+//    );
+//    //shape.setCenter(center);
     const double delta = Math::get_delta(m_xAxisRange, m_width, m_yAxisRange, m_height);
     for (std::size_t i = 0u; i < m_height; i++) {
         double y = get_y_from_row(i);

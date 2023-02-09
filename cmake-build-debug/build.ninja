@@ -79,6 +79,18 @@ build CMakeFiles/GeometryLibrary.dir/Math/Math.cpp.obj: CXX_COMPILER__GeometryLi
   OBJECT_DIR = CMakeFiles\GeometryLibrary.dir
   OBJECT_FILE_DIR = CMakeFiles\GeometryLibrary.dir\Math
 
+build CMakeFiles/GeometryLibrary.dir/Math/Matrix.cpp.obj: CXX_COMPILER__GeometryLibrary_Debug B$:/CProjects/GeometryLibrary/Math/Matrix.cpp || cmake_object_order_depends_target_GeometryLibrary
+  DEP_FILE = CMakeFiles\GeometryLibrary.dir\Math\Matrix.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\GeometryLibrary.dir
+  OBJECT_FILE_DIR = CMakeFiles\GeometryLibrary.dir\Math
+
+build CMakeFiles/GeometryLibrary.dir/PrimitiveShapes/Polygon.cpp.obj: CXX_COMPILER__GeometryLibrary_Debug B$:/CProjects/GeometryLibrary/PrimitiveShapes/Polygon.cpp || cmake_object_order_depends_target_GeometryLibrary
+  DEP_FILE = CMakeFiles\GeometryLibrary.dir\PrimitiveShapes\Polygon.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\GeometryLibrary.dir
+  OBJECT_FILE_DIR = CMakeFiles\GeometryLibrary.dir\PrimitiveShapes
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target GeometryLibrary
@@ -87,7 +99,7 @@ build CMakeFiles/GeometryLibrary.dir/Math/Math.cpp.obj: CXX_COMPILER__GeometryLi
 #############################################
 # Link the static library libGeometryLibrary.a
 
-build libGeometryLibrary.a: CXX_STATIC_LIBRARY_LINKER__GeometryLibrary_Debug CMakeFiles/GeometryLibrary.dir/Shape.cpp.obj CMakeFiles/GeometryLibrary.dir/Point/Point.cpp.obj CMakeFiles/GeometryLibrary.dir/PrimitiveShapes/Circle.cpp.obj CMakeFiles/GeometryLibrary.dir/Canvas/Canvas.cpp.obj CMakeFiles/GeometryLibrary.dir/Math/Math.cpp.obj
+build libGeometryLibrary.a: CXX_STATIC_LIBRARY_LINKER__GeometryLibrary_Debug CMakeFiles/GeometryLibrary.dir/Shape.cpp.obj CMakeFiles/GeometryLibrary.dir/Point/Point.cpp.obj CMakeFiles/GeometryLibrary.dir/PrimitiveShapes/Circle.cpp.obj CMakeFiles/GeometryLibrary.dir/Canvas/Canvas.cpp.obj CMakeFiles/GeometryLibrary.dir/Math/Math.cpp.obj CMakeFiles/GeometryLibrary.dir/Math/Matrix.cpp.obj CMakeFiles/GeometryLibrary.dir/PrimitiveShapes/Polygon.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\GeometryLibrary.dir
   POST_BUILD = cd .

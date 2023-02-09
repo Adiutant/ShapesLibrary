@@ -4,6 +4,40 @@
 
 #include "Math.h"
 namespace Math {
+
+    Equation solveSoLE(Matrix a, Matrix b){
+        double determinant = a[0][0] * a[1][1] - a[0][1] * a[1][0];
+        auto minor  =  a.GetMinorMatrix();
+        minor[0][1] *= -1;
+        minor[1][0] *= -1;
+        minor.Transpose();
+        auto  reverseMatrix = minor.getReverseMatrix(determinant);
+        Matrix x = reverseMatrix * b;
+        if (std::isnan(x.At(0,0))){
+            x[0][0]= 0.;
+        }
+        if (std::isnan(x.At(1,0))){
+            x[1][0]= 0.;
+        }
+        return Equation{x.At(0, 0), x.At(1, 0)};
+
+    }
+    bool isBetweenPoints(const Point& current, const  Point& first, const  Point& second) {
+       // auto dxc = current.x() - first.x();
+        //auto dyc = current.y() - first.y();
+
+        auto dxl = second.x() - first.x();
+        auto dyl = second.y() - first.y();
+        if (std::abs(dxl) >= std::abs(dyl))
+            return dxl > 0 ?
+                   first.x() <= current.x() && current.x() <= second.x() :
+                   second.x() <= current.x() && current.x() <= first.x();
+        else
+            return dyl > 0 ?
+                   first.y() <= current.y() && current.y() <= second.y() :
+                   second.y() <= current.y() && current.y() <= first.y();
+    }
+
     double get_continuous_from_discrete_coordinate(
             std::size_t discrete_coordinate,
             std::size_t discrete_range,

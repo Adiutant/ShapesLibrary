@@ -4,7 +4,7 @@ project(GeometryLibrary)
 set(CMAKE_CXX_STANDARD 14)
 
 
-add_library(GeometryLibrary  Shape.cpp Point/Point.cpp PrimitiveShapes/Circle.cpp Canvas/Canvas.cpp Math/Math.cpp)
+add_library(GeometryLibrary  Shape.cpp Point/Point.cpp PrimitiveShapes/Circle.cpp Canvas/Canvas.cpp Math/Math.cpp Math/Matrix.cpp PrimitiveShapes/Polygon.cpp)
 #add_source(GeometryLibrary main.cpp)
 
 add_executable( GeometryExec main.cpp)

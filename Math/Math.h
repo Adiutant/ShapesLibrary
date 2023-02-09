@@ -8,9 +8,27 @@
 #include <cmath>
 
 #include "../Point/Point.h"
+#include "Matrix.h"
 
 namespace Math {
+    struct Equation {
+        double k{};
+        double b{};
+        bool isForX{true};
+        Equation(double new_k, double new_b){
+            k = new_k; b = new_b;
+        };
+        double countForX(double x) const{
+            return k*x + b;
+        }
+        double countForY(double y) const{
+            return k*y + b;
+        }
+        Point leftEdge;
+        Point rightEdge;
+    };
 
+    bool isBetweenPoints(const Point& current,const  Point& first, const  Point& second) ;
 
     double get_continuous_from_discrete_coordinate(
             std::size_t discrete_coordinate,
@@ -28,6 +46,7 @@ namespace Math {
     );
     double get_delta(double range_x, std::size_t length_x, double range_y, std::size_t length_y);
     double get_distance(const Point& a, const Point& b);
+    Equation solveSoLE(Matrix a, Matrix b);
 }
 
 
