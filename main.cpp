@@ -25,7 +25,9 @@ int main(){
     auto b = Matrix(2,1);
     b[0][0] = 1;
     b[1][0] = -4;
-    auto polygon = Polygon({{1,1},{11,1},{25,10}, {8,10}});
+    auto polygon = Polygon({{1,1},{11,1},{25,10}, { 25,15},{8,10}});
+    auto line  = Polygon({{15,15}, {10,18}});
+    canvas.draw(line);
     canvas.draw(polygon);
     canvas.draw(c);
     canvas.printCanvas();

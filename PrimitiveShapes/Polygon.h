@@ -16,7 +16,6 @@ public:
     bool isPointBelongToShape(const Point& point,double delta) const override;
 
 private:
-    void initializeDot(const std::vector<Point>& points);
     void initializeLine(const std::vector<Point>& points);
     void initializePolygon(const std::vector<Point>& points);
     std::vector<Math::Equation> mEquasions;

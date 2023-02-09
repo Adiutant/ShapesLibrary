@@ -6,9 +6,7 @@
 
 
 Polygon::Polygon(const std::vector<Point>& points){
-    if (points.size() == 1){
-       initializeDot(points);
-    }
+
     if (points.size() ==2){
         initializeLine(points);
     }
@@ -18,14 +16,7 @@ Polygon::Polygon(const std::vector<Point>& points){
 
 
 }
-void Polygon::initializeDot(const std::vector<Point>& points) {
-    Point singlePoint(points[0]);
-    auto equation = Math::Equation{singlePoint.y() / singlePoint.x(), 0.};
-    equation.leftEdge = points[0];
-    equation.rightEdge = points[0];
-    mEquasions.emplace_back(equation);
 
-}
 void Polygon::initializeLine(const std::vector<Point>& points) {
 
 
@@ -78,6 +69,7 @@ Polygon::~Polygon() {
 }
 
 bool Polygon::isPointBelongToShape(const Point &point, double delta) const {
+    if (mEquasions.size() == 1){}
     for (const auto &equation: mEquasions) {
         double count;
         if (equation.isForX)
